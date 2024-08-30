@@ -1,0 +1,209 @@
+@import "./global.css";
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  margin-top: 5rem;
+}
+
+.header-content img {
+  border-radius: 50;
+}
+
+.header-content__info h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.header-content__info p {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+.header-content__info span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+.header-content__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.header-content__contacts .telegram {
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid;
+  background-color: rgb(54, 54, 231);
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: rgb(54, 54, 231);
+  }
+}
+
+.header-content__contacts .phone-number {
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid;
+  background-color: rgb(23, 155, 23);
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: rgb(23, 155, 23);
+  }
+}
+
+.header-content__contacts .student {
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid;
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.hero-content_box {
+  padding: 1.5rem 1.5rem;
+  background-color: darkgrey;
+  border-radius: 1rem;
+  box-shadow: 11px 11px 19px 3px rgba(171, 135, 135, 0.69);
+}
+
+.hero-content_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.hero-content_box p {
+  font-size: 2rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
+.hero-content_box time {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.hero-content_box ul {
+  display: flex;
+  align-items: center;
+  column-gap: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-content_box ul .figma {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid black;
+  background-color: orange;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: orange;
+  }
+}
+
+.hero-content_box ul .github {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid black;
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.hero-content_box ul .vercel {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid black;
+  background-color: rgb(97, 97, 221);
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: white;
+    color: rgb(97, 97, 221);
+  }
+}
+
+section .container h2 {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+@media (max-width: 37.5rem) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .header-content__info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header-content__info h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .header-content__info p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  .header-content__info span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  .header-content__contacts {
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+}
